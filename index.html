@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500;1,600&family=Lexend+Deca&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500;1,600&family=Inter:wght@400;700&family=Lexend+Deca&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+    body {
+      background-color: hsl(233, 47%, 7%);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Lexend Deca', 'Inter';
+      text-align: left;
+    }
+    .card {
+      margin-top: 10%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 1350px;
+      height: 500px;
+      background-color: hsl(244, 38%, 16%);
+    }
+    .container {
+      margin: 80px 100px;
+      width: 500px;
+      height: 380px;
+      
+    }
+    .card-layer {
+      position: relative;
+      z-index: 3;
+      float: right;
+      height: 500px;
+      background-color: hsl(277, 64%, 61%);
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    img {
+      object-fit: cover;
+      mix-blend-mode: multiply;
+      opacity: .75;
+      float: right;
+      height: 500px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    h1 {
+      text-align: left;
+      font-size: 45px;
+      font-family: 'Inter', sans-serif;
+    }
+    .insights {
+      color: hsl(277, 64%, 61%);
+    }
+    p {
+      color: hsla(0, 0%, 100%, 0.75);
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      text-align: left;
+    }
+    ul {
+      margin-top: 70px;
+      margin-left: -40px;
+      width: 445px;
+      font-size: 32px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Lexend Deca';
+    }
+    .ctq {
+      font-size: 15px;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    
+    <div class="card-layer">
+      <div class="picture"> <img src="/images/image-header-desktop.jpg"></div>
+    </div>
+    
+   
+    <div class="container">
+   <h1>Get <span class="insights">insights</span> that help your business grow.</h1>
+
+    <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
+
+      <ul>
+        <li>10k+ <br> <span class="ctq">COMPANIES</span> </li>
+        <li>314 <br> <span class="ctq">TEMPLATES</span></li>
+        <li>12m+ <br> <span class="ctq">QUERIES</span></li>
+        
+      </ul>
+    </div>
+    
+    
+    
+  </div>
+</body>
+</html>
